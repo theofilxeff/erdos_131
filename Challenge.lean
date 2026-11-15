@@ -8,16 +8,16 @@ import Mathlib.Analysis.SpecialFunctions.Log.Basic
 
 **This is the trusted statement surface.**  To trust the formalization you
 need to read THIS file (the two definitions and one theorem below), the axiom
-whitelist in `comparator-config.json`, and the five short axiom files in
-`Nondividing/External/` (245 lines) that the whitelist names.  The Comparator
+whitelist in `comparator-config.json`, and the four files declaring these axioms
+in `Nondividing/External/`.  The Comparator
 tool (https://github.com/leanprover/comparator) certifies that the project
 (`Solution.lean` → `Nondividing.FinalAssembly`) proves *exactly* the statement
 below, using *only* the permitted axioms, and that the proof is accepted by
 the Lean kernel.
 
 The permitted axioms are Lean's three foundational axioms (`propext`,
-`Classical.choice`, `Quot.sound`) plus the eight trusted external interfaces
-E1–E5 declared in `Nondividing/External/` — each a published result cited to
+`Classical.choice`, `Quot.sound`) plus the seven external results
+from E1, E2, E4 and E5 declared in `Nondividing/External/` — each a published result cited to
 the literature (Conlon–Fox–Pham / Pham–Zakharov, Schneider, Rogers–Shephard,
 Betke–Henk–Wills); see the README.
 

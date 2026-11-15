@@ -433,6 +433,9 @@ theorem slab_count (d : ℕ) :
   -- E2 John placement.
   obtain ⟨Q, _hQsteps, hQprop, _hQinner, hQouter, hQcard⟩ :=
     hE2 (Module.finrank ℝ H) H K S rfl hcompact hconvex hsymmK hKH hzK rfl
+      ⟨0, (by
+        change (0 : Fin d → ℝ) ∈ realBox N ∧ |∑ i, a i * (0 : Fin d → ℝ) i| ≤ τ * w
+        exact ⟨⟨fun i => by simp, fun i => by simp⟩, by simpa using hτw⟩), H.zero_mem⟩
   have hrle : Module.finrank ℝ H ≤ d := by
     have := Submodule.finrank_le H
     rwa [Module.finrank_pi ℝ, Fintype.card_fin] at this

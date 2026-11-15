@@ -17,7 +17,7 @@ body theorem, but not the four results below.
 Trusted external interface E5(a): Blaschke selection.
 
 Source: Rolf Schneider, *Convex Bodies: The Brunn--Minkowski Theory*,
-2nd ed., Theorem 1.8.6.  `ConvexBody` already packages nonemptiness,
+2nd ed., Theorem 1.8.7.  `ConvexBody` already packages nonemptiness,
 compactness, and convexity, and its metric is the Hausdorff metric.  The
 common upper bound `C` is the usual uniform boundedness hypothesis.
 -/

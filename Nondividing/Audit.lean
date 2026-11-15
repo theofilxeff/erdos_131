@@ -4,7 +4,7 @@ import Nondividing.Main
 #print axioms Nondividing.main_lower_eps
 
 -- Phase C progression-comparison assemblies (parameterized over E1 outputs):
--- these must reach only Lean core axioms, since E1–E5 enter only through their
+-- these must reach only Lean core axioms, since the external assumptions enter only through their
 -- hypotheses, not through any axiom in the proof term.
 #print axioms Nondividing.GAP.progression_comparison_gt
 #print axioms Nondividing.GAP.progression_comparison_le
@@ -53,8 +53,7 @@ import Nondividing.Main
 #print axioms Nondividing.realEval_injective
 #print axioms Nondividing.main_upper_eps_of_projective
 
--- One-sided filling core: the ψ-transferred rounding reaches exactly the E3
--- interface `zonotope_rounding` plus Lean core axioms.
+-- The ψ-transferred rounding proof uses only Lean core axioms.
 #print axioms Nondividing.zonotope_rounding_carrier
 #print axioms Nondividing.evalHom_injective
 #print axioms Nondividing.filling_assembly
@@ -95,11 +94,11 @@ import Nondividing.Main
 #print axioms Nondividing.robust_zonotope
 
 -- THE TUBE INCLUSION (dagger): robust_zonotope + one_sided_filling composed.
--- Reaches E2+E3+E5+core (parameterized over the package).
+-- Reaches E2+E5+core (parameterized over the package).
 #print axioms Nondividing.tube_inclusion
 #print axioms Nondividing.tube_inclusion_of_zonotope
 
--- PROJECTIVE CONVEXITY ASSEMBLED: the complete contradiction, E2+E3+E5+core
+-- PROJECTIVE CONVEXITY ASSEMBLED: the complete contradiction, E2+E5+core
 -- (E1 enters only via the Package at the call site).
 #print axioms Nondividing.projective_convexity_assembled
 

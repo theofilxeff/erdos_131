@@ -830,7 +830,7 @@ theorem cap_lifting_full (d : ℕ) :
   obtain ⟨Q, _hQstep, hQprop, _hQinner, hAQ, hQcard⟩ :=
     hjohn d ⊤ (Kd : Set (Fin d → ℝ)) A hfr Kd.isCompact Kd.convex
       hsymm_iff (by intro x _; exact Submodule.mem_top)
-      (fun z => mem_latticePoints Kd.isBounded z) hspanA
+      (fun z => mem_latticePoints Kd.isBounded z) hspanA ⟨0, hKD h0K⟩
   -- The volume count for `A`.
   have hcardA : (A.card : ENNReal) ≤
       (C₀ : ENNReal) * ((binom : ENNReal) * ENNReal.ofReal (T ^ d) *

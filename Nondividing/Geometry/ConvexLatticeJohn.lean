@@ -108,6 +108,7 @@ theorem coordinate_section_john (d : ℕ) :
       (sectionBody_subset_submodule H M)
       (fun z => (realPoint_mem_sectionBody_iff H M z).symm)
       (integerRealSpan_latticeSection_eq H M C₀ hC₀box hspan)
+      ⟨0, (by simp : (0 : Fin d → ℝ) ∈ realCoordinateBox M), H.zero_mem⟩
   exact ⟨P, hstep, hproper, houter,
     hcard.trans (Nat.mul_le_mul_left C (by
       classical

@@ -34,6 +34,7 @@ axiom discrete_john (d : ℕ) :
         K ⊆ H →
         (∀ z, z ∈ A ↔ realPoint z ∈ K) →
         integerRealSpan A = H →
+        K.Nonempty →
         ∃ P : GAP d h,
           (∀ i, realPoint (P.step i) ∈ H) ∧
           P.Proper ∧

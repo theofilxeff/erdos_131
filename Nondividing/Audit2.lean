@@ -24,9 +24,9 @@ import Nondividing.ProjectiveTheorem
 #print axioms Nondividing.PrepChain.pow_upSum_le
 
 -- ============================================================
--- THE MAIN THEOREM, UNCONDITIONAL: log F(N) / log N → 1/5.
+-- THE MAIN THEOREM: log F(N) / log N → 1/5.
 -- Expected axioms: Lean core (propext, Classical.choice, Quot.sound)
--- + the whitelisted external interfaces E1–E5 ONLY.
+-- + the seven whitelisted mathematical axioms from E1, E2, E4 and E5.
 -- ============================================================
 #print axioms Nondividing.main_log_limit
 #print axioms Nondividing.descentSupplier_proved

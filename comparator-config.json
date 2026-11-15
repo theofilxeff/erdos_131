@@ -8,7 +8,6 @@
         "Classical.choice",
         "Nondividing.External.cfp_structure",
         "Nondividing.External.discrete_john",
-        "Nondividing.External.zonotope_rounding",
         "Nondividing.External.convex_density_set",
         "Nondividing.External.blaschke_selection",
         "Nondividing.External.convexBody_volume_tendsto",
